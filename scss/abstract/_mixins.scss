@@ -1,0 +1,16 @@
+@mixin flexPosition($justCont: center, $alignIte: center) {
+    display: flex;
+    justify-content: $justCont;
+    align-items: $alignIte;
+}
+
+@mixin titulosInformacion{
+            background-color: color(primary);
+            color: color(secondary);
+            @include flexPosition;
+            padding-top: 5px;
+}
+
+@mixin parrafosInformacion{
+        margin: 10px;
+}
